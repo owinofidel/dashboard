@@ -1,42 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color: blanchedalmond;
     font-family: 'Poppins', sans-serif;
-}
-
-body {
     width: 100%;
-    min-height: 100vh;
-    background-color: red;
+    max-height: 100vw;
     position: relative;
+    display: flex;
+    flex-direction: row;
 }
 
-.navigation{
-    position: absolute;
-    left: 0;
-    width: calc(100% - 80%);
+.container{
+    width: 12%;
+    background-color: azure;
     height: 100vh;
-    background-color: rgba(241, 232, 241, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: width 0.5s ease-in-out;
 }
 
-main{
-    position: absolute;
-    width: 80%;
-    height: 100vh;
-    background-color: yellow;
-    right: 0;
-    overflow-y: scroll;
-    text-align: center;
-    padding: 10px;
-}
-
-.logo {
-    height: 20vh;
-    background-color: pink;
+.logo{
+    width: 100%;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.nav-links{
+    width: 100%;
+    height: 70vh;
+}
+
+.nav-links ul li{
+    list-style-type: none;
+    width: 90%;
+    height: 8vh;
+    margin: 2px auto;
+    background-color: rgba(245, 244, 233, 0.295);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul li:hover{
+    background-color: aqua;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+}
+
+.link-text{
+    margin-left: 4px;
+    display: inline-block;
+    transition: display 0.5s ease-in-out;
+}
+
+.logout{
+    width: 90%;
+    height: 8vh;
+    margin: 2em auto;
+    border-radius: 15px;
+}
+
+.logout-cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.logout-text{
+    margin-left: 10px;
+}
+
+.logout-cont:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+
+
+.main{
+ padding-left: 40px;
+}
+
+.resize-container{
+    position: absolute;
+    left: 130px;
+    cursor: pointer;
+    transition: left .5s ease-in-out;
+}
+.resize-container-sm-container{
+  left: 60px;
+  transition: left .5s ease-in-out;
+}
+
+.minimize{
+    width: 4%;
+    transition: width 0.5s ease-in-out;
+}
+
+.visible{
+    display: none;
+    transition: display 0.5s ease-in-out;
+}
+
+/*  */
