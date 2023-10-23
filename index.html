@@ -8,109 +8,122 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="navigation">
-        <nav class="nav-bar">
-            <div class="logo">
-                <div class="logo-image">
-                        <!-- <image src="./images/my-logo.png" alt="my logo"/> -->
+    <div class="container">
+        <aside>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <div class="logo-image">
+                            <img src="./images/my-logo.png" alt="my logo" width="50" height="50"/>
+                    </div>
                 </div>
-                <div class="logo-title">
-                    <p>Logo</p>
+                <div class="nav-links">
+                    <div>
+                        <ul>
+                            <li class="link">
+                                <a href="#Dashboard">
+                                    <div class="link-icon">
+                                        <i class="fa-solid fa-boxes-stacked"></i>
+                                        <span class="link-text">Dashboard</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="link ">
+                                <a href="#Users">
+                                    <div class="link-icon">
+                                        <i class="fa-solid fa-users"></i>
+                                        <span class="link-text">Users</span>
+                                    </div>
+                                </a>
+    
+                            </li>
+                            <li class="link">
+                                <a href="#Analytics">
+                                    <div class="link-icon">
+                                        <i class="fa-solid fa-chart-line"></i>
+                                        <span class="link-text">Analytics</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="link">
+                                <a href="#History">
+                                    <div class="link-icon">
+                                        <i class="fa-solid fa-scroll"></i>
+                                        <span class="link-text">History</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="link">
+                                <a href="#Tickets">
+                                    <div class="link-icon">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <span class="link-text">Tickets</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="link">
+                                <a href="#Sale-List">
+                                    <div class="link-icon">
+                                        <i class="fa-regular fa-clipboard"></i>
+                                        <span class="link-text">Sale List</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="link">
+                                <a href="#Reports">
+                                    <div class="link-icon">
+                                        <ion-icon name="alert-circle-outline"></ion-icon>
+                                        <span class="link-text">Reports</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="link">
+                                <a href="#Settings">
+                                    <div class="link-icon">
+                                        <i class="fa-solid fa-gear"></i>
+                                        <span class="link-text">Settings</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="link">
+                                <a href="#New-Login">
+                                    <div class="link-icon">
+                                        <ion-icon name="add-outline"></ion-icon>
+                                        <span class="link-text">New Login</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="nav-links">
-                <div>
-                    <ul>
-                        <li class="link">
-                            <a href="#Dashboard">
-                                <div class="link-icon">
-                                    <i class="fa-solid fa-boxes-stacked"></i>
-                                </div>
-                                <span class="link-text">Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="link">
-                            <a href="#Users">
-                                <div class="link-icon">
-                                    <i class="fa-solid fa-users"></i>
-                                </div>
-                                <span class="link-text">Users</span>
-                            </a>
+                <div class="logout">
+                    <div class="logout-cont">
+                        <i class="fa-solid fa-arrow-right-from-bracket">
+                        </i>
+                        <span class="logout-text">
+                            <p>Logout</p>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+    </div>
 
-                        </li>
-                        <li class="link">
-                            <a href="#Analytics">
-                                <div class="link-icon">
-                                    <i class="fa-solid fa-chart-line"></i>
-                                </div>
-                                <span class="link-text">Analytics</span>
-                            </a>
-                        </li>
-                        <li class="link">
-                            <a href="#History">
-                                <div class="link-icon">
-                                    <i class="fa-solid fa-scroll"></i>
-                                </div>
-                                <div class="link-text">History</div>
-                            </a>
-                        </li>
-                        <li class="link">
-                            <a href="#Tickets">
-                                <div class="link-icon">
-                                    <i class="fa-regular fa-envelope"></i>
-                                </div>
-                                <span class="link-text">Tickets</span>
-                            </a>
-                        </li>
-                        <li class="link">
-                            <a href="#Sale-List">
-                                <div class="link-icon">
-                                    <i class="fa-regular fa-clipboard"></i>
-                                </div>
-                                <span class="link-text">Sale List</span>
-                            </a>
-                        </li>
-                        <li class="link">
-                            <a href="#Reports">
-                                <div class="link-icon">
-                                    <ion-icon name="alert-circle-outline"></ion-icon>
-                                </div>
-                                <span class="link-text">Reports</span>
-                            </a>
-                        </li>
-                        <li class="link">
-                            <a href="#Settings">
-                                <div class="link-icon">
-                                    <i class="fa-solid fa-gear"></i>
-                                </div>
-                                <span class="link-text">Settings</span>
-                            </a>
-                        </li>
-                        <li class="link">
-                            <a href="#New-Login">
-                                <div class="link-icon">
-                                    <ion-icon name="add-outline"></ion-icon>
-                                </div>
-                                <span class="link-text">New Login</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="logout">
-                <div class="logout-icon">
-                    <i class="fa-solid fa-arrow-right-from-bracket">
-                    </i>
-                </div>
-                <span class="logout-text">
-                    <p>Logout</p>
-                </span>
-            </div>
-        </nav>
+    <!-- Toggle button to resize the navigation bar  -->
+    <!-- It increases and reduces the width by addind and removing -->
+    <!-- a class -->
+
+    <div class="resize-container">
+        <div class="resize-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="main">
+        <p>h2</p>
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-`   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
