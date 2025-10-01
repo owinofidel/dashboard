@@ -14,7 +14,7 @@ const addIconText = (value) => {
     if(value){
         setTimeout(()=>{
             for(let i = 0 ; i < linksText.length; i++){
-                    // linksText[i].classList.toggle("full"
+                    // linksText[i].classList.toggle("full");
                     linksText[i].classList.toggle("visible")
                 }
         }, 100)
@@ -22,7 +22,7 @@ const addIconText = (value) => {
     } else {
         setTimeout(()=>{
             for(let i = 0 ; i < linksText.length; i++){
-                    // linksText[i].classList.toggle("full")
+                    // linksText[i].classList.toggle("full");
                     linksText[i].classList.toggle("visible")
                 }
         }, 400)
